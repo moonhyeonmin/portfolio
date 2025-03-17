@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+.home-container {
+  position: relative;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+/* ✅ 프로필 섹션 스타일 */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+}
+
+.profile-name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #1B3E6A;
+}
+
+.profile-title {
+  font-size: 1.2rem;
+  color: #1B3E6A;
+}
+
+/* ✅ 소개 섹션 */
+.intro-section {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #1B3E6A;
+}
+
+/* ✅ 버튼 섹션 */
+.button-section {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.github-btn {
+  background: #333;
+  color: white;
+}
+
+.contact-btn {
+  background: white;
+  color: #0056b3;
+}
+
+.github-btn:hover,
+.contact-btn:hover {
+  transform: scale(1.1);
+}
+
+/* ✅ 반응형: 작은 화면에서 크기 조정 */
+@media (max-width: 768px) {
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-name {
+    font-size: 1.8rem;
+  }
+
+  .profile-title {
+    font-size: 1rem;
+  }
+
+  .intro-section {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+  }
+}

@@ -1,11 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./../css/App.css"; // 스타일 적용
+import "../css/Home.css"; // 스타일 적용
+// import AnimatedBackground from "../components/AnimatedBackground.js";
 import TechStack from "../components/TechStack.js";
+import DockBar from "../components/DockBar.js";
 
 const Home = () => {
   return (
     <div className="home-container">
+      {/* <AnimatedBackground /> */}
+
       {/* 프로필 섹션 */}
       <div className="profile-section">
         <img src={process.env.PUBLIC_URL + "/images/Me.jpeg"} alt="Profile" className="profile-img" />
@@ -35,24 +38,7 @@ const Home = () => {
     {/* ✅ 기술 스택 추가 */}
     <TechStack />
       {/* 하단 Dock Bar */}
-      <div className="dock-container">
-        <Link to="/" className="dock-item">
-          <span className="dock-icon">🏠</span>
-          <span className="dock-text">Home</span>
-        </Link>
-        <Link to="/projects" className="dock-item">
-          <span className="dock-icon">📂</span>
-          <span className="dock-text">Projects</span>
-        </Link>
-        <Link to="/about" className="dock-item">
-          <span className="dock-icon">👤</span>
-          <span className="dock-text">About</span>
-        </Link>
-        <Link to="/contact" className="dock-item">
-          <span className="dock-icon">💬</span>
-          <span className="dock-text">Contact</span>
-        </Link>
-      </div>
+      <DockBar />
     </div>
   );
 };
