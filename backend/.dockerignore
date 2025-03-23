@@ -1,0 +1,4 @@
+.gradle
+out
+*.iml
+.DS_Store
