@@ -1,0 +1,53 @@
+/* 📌 기술 스택 컨테이너 */
+.tech-stack {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 여러 줄 배치 */
+    gap: 12px;
+    margin-top: 40px;
+    padding: 10px;
+  }
+  
+  /* 📌 기술 스택 개별 아이콘 박스 */
+  .tech-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2); /* 반투명 배경 */
+    backdrop-filter: blur(5px);
+    font-size: 14px;
+    font-weight: bold;
+    color: #1C5498;
+  }
+  
+  /* 📌 아이콘 크기 */
+  .tech-icon {
+    font-size: 20px;
+  }
+  
+  /* ✅ 개별 기술 색상 */
+  .nodejs { color: #68a063; }
+  .c { color: #646464; }
+  .python { color: #306998; }
+  .springboot { color: #6db33f; }
+  .swagger { color: #85ea2d; }
+  .mysql { color: #00758f; }
+  .mongodb { color: #47a248; }
+  .ubuntu { color: #e95420; }
+  .docker { color: #2496ed; }
+  .AWS { color: #ff9900; }
+  .k8s { color: #326ce5; }
+  
+  /* 반응형 */
+  @media (max-width: 768px) {
+    .tech-stack {
+      flex-wrap: wrap;
+    }
+    .tech-item {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
